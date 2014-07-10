@@ -10,19 +10,19 @@ describe "pages" do
     end
   end
 
-  describe "Contact page" do
+  describe "Register page" do
 
-    it "should have the content 'contact'" do
-      visit '/pages/contact'
-      expect(page).to have_content('Contact')
+    it "should have the content 'Register'" do
+      visit '/pages/register'
+      expect(page).to have_content('Register')
     end
   end
 
   describe "About Us page" do
 
-    it "should have the content 'About Us'" do
+    it "should have the content 'About'" do
       visit '/pages/about'
-      expect(page).to have_content('About Us')
+      expect(page).to have_content('About')
     end
   end
 end
