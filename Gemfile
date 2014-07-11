@@ -38,8 +38,12 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-group :development do 
-    gem 'rspec-rails' 
+group :development, :test do 
+    gem 'rspec-rails'
+    gem 'guard-rspec'
+    gem 'spork-rails'
+    gem 'guard-spork'
+    gem 'childprocess' 
 end
 
 group :test do
