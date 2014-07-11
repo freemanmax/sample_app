@@ -8,6 +8,11 @@ describe "pages" do
       visit '/pages/home'
       expect(page).to have_content('Sample App')
     end
+
+    it "should have the base title" do
+      visit '/pages/home'
+      expect(page).to have_title("Ruby on Rails Tutorial Sample App")
+    end
   end
 
   describe "Register page" do
