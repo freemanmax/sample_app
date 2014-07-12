@@ -2,29 +2,16 @@
 <html>
   <head>
     <title><%= title %></title>
-    <%= stylesheet_link_tag    "application", media: "all",
-                                            "data-turbolinks-track" => true %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <%= render 'layouts/stylesheets' %>
   </head>
   <body>
     <div class="container">
-      <header>
-        <%= image_tag("rails.png", :alt => "Sample App", :class => "round") %>
-        <nav class="round">
-           <ul>
-              <li><%= link_to "Home", '#' %></li>
-              <li><%= link_to "Register", '#' %></li>
-              <li><%= link_to "Login", '#' %></li>
-           </ul>
-        </nav>
-      </header>
+      <%= render 'layouts/header' %>
       <section class="round">
         <%= yield %>
       </section>
+      <%= render 'layouts/footer' %>
     </div>
   </body>
 </html>
