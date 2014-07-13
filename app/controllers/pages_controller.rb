@@ -3,8 +3,8 @@ class PagesController < ApplicationController
      @title = 'Home'
   end
 
-  def register
-     @title = 'Register'
+  def contact
+     @title = 'Contact'
   end
 
   def about

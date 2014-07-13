@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  
+
   root :to => 'pages#home'
-  match '/register', :to => 'pages#register', via: 'get'
+  match '/register', :to => 'users#new', via: 'get'
+  match '/contact', :to => 'pages#contact', via: 'get'
   match '/about', :to => 'pages#about', via: 'get'
   
 
