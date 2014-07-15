@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-
+  resources :users
   root :to => 'pages#home'
   match '/register', :to => 'users#new', via: 'get'
   match '/contact', :to => 'pages#contact', via: 'get'

@@ -40,6 +40,7 @@ gem 'spring',        group: :development
 
 gem 'bootstrap-sass'
 gem 'sprockets'
+gem 'bcrypt'
 
 group :development, :test do 
     gem 'rspec-rails'
