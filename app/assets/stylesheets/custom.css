@@ -4,7 +4,8 @@
 }
 
 body {
-  background: #cff;
+  background: #504f48;
+  font-family: "Times New Roman", Times, serif;
 }
 
 header {
@@ -30,17 +31,16 @@ section h1 {
 /* Links */
 
 a {
-  color: #09c;
+  color: #df2a20;
   text-decoration: none;
 }
 
-a:hover {
-  color: #069;
-  text-decoration: underline;
+a:visited {
+  color: #df2a20;
 }
 
-a:visited {
-  color: #069;
+a:hover {
+  color: #009cff;
 }
 
 /* Navigation */
@@ -64,16 +64,17 @@ nav ul li {
 }
 
 nav ul li a {
+  text-decoration: none;
   padding: 0 5px;
   font-weight: bold;
 }
 
 nav ul li a:visited {
-  color: #09c;
+  color: #df2a20;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  color: #009cff;
 }
 
 /* Register button */
@@ -84,11 +85,16 @@ a.register_button {
   display: block;
   text-align: center;
   width: 190px;
+  height: 33px;
   color: #fff;
   background: #006400;
-  font-size: 150%;
+  font-size: 24px;
   font-weight: bold;
   padding: 20px;
+}
+
+a:hover.register_button {
+  background: #009cff;
 }
 
 /* Round corners */
@@ -103,7 +109,7 @@ a.register_button {
 
 footer {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
   width: 950px;
   margin-left: auto;
   margin-right: auto;
@@ -117,6 +123,29 @@ footer nav {
 
 
 div.field, div.actions {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
+.field input {
+  width: 170px;
+  height: 20px;
+  border: 1px solid;
+  border-color: gray;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.field input:focus {
+  border-color: #AB0202;
+}
+
+/* Eror msg */
+
+#error_explanation {
+  color: #f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
