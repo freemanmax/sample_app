@@ -140,6 +140,22 @@ div.field, div.actions {
   border-color: #AB0202;
 }
 
+.actions input {
+  height: 24px;
+  margin: 0;
+  background: #006400;
+  color: white;
+  border: 1px solid;
+  border-color: gray;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.actions input:hover {
+  background: #009cff;
+}
+
 /* Eror msg */
 
 #error_explanation {
@@ -157,4 +173,13 @@ div.field, div.actions {
   background: #e6efc2;
   color: #264409;
   border-color: #c6d880;
+}
+
+.alert-error {
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 2px solid #ddd;
+  background: #ea6464;
+  color: #960b0b;
+  border-color: #ff283c;
 }
