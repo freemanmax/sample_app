@@ -184,11 +184,24 @@ div.field, div.actions {
   border-color: #ff283c;
 }
 
+.gravatar h1 {
+  margin-bottom: 10px;
+}
+
+.gravatar p {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+img.gravatar {
+  display: inline-block;
+}
 
 .gravatar h1 a {
   display: inline-block;
   float: right;
-  margin-right: 700px;
+  margin-right: 760px;
   margin-top: 25px;
+  font-size: 20px;
 
 }
