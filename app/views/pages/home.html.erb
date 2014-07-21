@@ -4,5 +4,6 @@
   <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
   sample application.
 </p>
-
+<% if loged_out? %>
 <%= link_to "Register now!", register_path, :class => "register_button round" %>
+<% end %>
