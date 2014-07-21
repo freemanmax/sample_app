@@ -1,0 +1,11 @@
+<div class="gravatar">
+      <h1>
+        <%= gravatar_for @user %>
+        <% if @title == 'Edit user' %>
+           <a href="http://gravatar.com/emails">change</a>
+        <% end %>
+      </h1>
+      <p>  
+        <%= @user.name %>
+      </p>
+</div>

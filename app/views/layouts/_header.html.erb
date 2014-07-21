@@ -5,6 +5,7 @@
            <li><%= link_to "Home", root_path %></li>
            <% if loged_in? %>
              <li><%= link_to "Profile", user_path(current_user) %></li>
+             <li><%= link_to "Settings", edit_user_path(current_user) %></li>
              <li><%= link_to "Logout", logout_path, method: "delete" %></li>
            <% else %>
              <li><%= link_to "Register", register_path %></li>

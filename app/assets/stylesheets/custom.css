@@ -183,3 +183,12 @@ div.field, div.actions {
   color: #960b0b;
   border-color: #ff283c;
 }
+
+
+.gravatar h1 a {
+  display: inline-block;
+  float: right;
+  margin-right: 700px;
+  margin-top: 25px;
+
+}
