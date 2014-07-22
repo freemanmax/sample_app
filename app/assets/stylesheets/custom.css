@@ -184,6 +184,15 @@ div.field, div.actions {
   border-color: #ff283c;
 }
 
+.alert-notice {
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 2px solid #ddd;
+  background: #e4ea85;
+  color: #b7a31a;
+  border-color: #c8d22a;
+}
+
 .gravatar h1 {
   margin-bottom: 10px;
 }
