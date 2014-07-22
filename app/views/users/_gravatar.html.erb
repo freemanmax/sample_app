@@ -1,11 +1,17 @@
 <div class="gravatar">
+    <% if @title == 'Edit user' %>
       <h1>
-        <%= gravatar_for @user %>
-        <% if @title == 'Edit user' %>
-           <a href="http://gravatar.com/emails">change</a>
-        <% end %>
+        <%= gravatar_for @user, size: 110 %>
+          <a href="http://gravatar.com/emails">change</a>
       </h1>
       <p>  
         <%= @user.name %>
       </p>
+    <% end %>
+    <% if @title == @user.name %>
+      <h1>
+        <%= gravatar_for @user, size: 110 %></br> 
+        <%= @user.name %>
+      </h1>
+    <% end %>
 </div>

@@ -209,8 +209,18 @@ img.gravatar {
 .gravatar h1 a {
   display: inline-block;
   float: right;
-  margin-right: 760px;
-  margin-top: 25px;
+  margin-right: 720px;
+  margin-top: 45px;
   font-size: 20px;
 
+}
+
+/* Users index */
+
+ul.users {
+  margin-top: 1em;
+}
+
+ul.users li {
+  list-style: none;
 }
