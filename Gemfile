@@ -41,6 +41,8 @@ gem 'spring',        group: :development
 gem 'bootstrap-sass'
 gem 'sprockets'
 gem 'bcrypt-ruby', :require => 'bcrypt'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 group :development, :test do
     gem 'sqlite3' 
@@ -48,7 +50,8 @@ group :development, :test do
     gem 'guard-rspec'
     gem 'spork-rails'
     gem 'guard-spork'
-    gem 'childprocess' 
+    gem 'childprocess'
+    gem 'faker' 
 end
 
 group :test do
