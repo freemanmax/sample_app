@@ -4,7 +4,8 @@ namespace :db do
     User.create!(name: "Nenad Stojkovikj",
                  email: "nenadstojkovikj@gmail.com",
                  password: "123456",
-                 password_confirmation: "123456")
+                 password_confirmation: "123456",
+                 admin: true)
     User.create!(name: "Example User",
                  email: "example@railstutorial.org",
                  password: "foobar",
