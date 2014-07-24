@@ -192,6 +192,9 @@ div.field, div.actions {
   color: #b7a31a;
   border-color: #c8d22a;
 }
+div.gravatar {
+  width: 400px;
+}
 
 .gravatar h1 {
   margin-bottom: 10px;
@@ -209,13 +212,17 @@ img.gravatar {
 .gravatar h1 a {
   display: inline-block;
   float: right;
-  margin-right: 720px;
+  margin-right: 200px;
   margin-top: 45px;
   font-size: 20px;
 
 }
 
 /* Users index */
+
+#all-users {
+  padding-left: 40px;
+}
 
 ul.users {
   margin-top: 1em;
@@ -228,3 +235,82 @@ ul.users li {
   display: inline-block;
   list-style: none;
 }
+
+/* User show page */
+
+table.profile {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+td.main {
+  width: 62%;
+  padding: 1em 2em 1em 0;
+}
+
+td.sidebar {
+  width: 38%;
+  padding-top: 85px;
+  padding-left: 30px;
+  vertical-align: top;
+  background: #247737;
+  border: solid 1px;
+}
+
+
+/* Microposts */
+
+h1.micropost {
+  margin-bottom: 0.3em;
+}
+
+table.microposts {
+  width: 560px;
+  margin-top: 1em;
+}
+
+table.microposts tr {
+  height: 70px;
+}
+
+table.microposts tr td.gravatar {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  width: 50px;
+}
+
+table.microposts tr td.micropost span.timepost {
+  display: block;
+  font-size: 85%;
+  color: #666;
+}
+
+td.micropost {
+  border-top: 1px solid #e8e8e8;
+}
+
+div.user_info img {
+  padding-right: 0.1em;
+}
+
+div.user_info a {
+  text-decoration: none;
+}
+
+div.user_info span.user_name {
+  position: absolute;
+}
+
+div.user_info span.microposts {
+  font-size: 80%;
+}
+
+form.new_micropost {
+  margin-bottom: 2em;
+}
+
+form.new_micropost textarea {
+  height: 4em;
+  margin-bottom: 0;
+}
+
