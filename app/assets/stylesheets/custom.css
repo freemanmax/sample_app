@@ -160,10 +160,11 @@ div.field, div.actions {
 
 #error_explanation {
   color: #f00;
-  ul {
-    list-style: none;
-    margin: 0 0 18px 0;
-  }
+}
+
+#error_explanation ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 .alert-success {
@@ -236,6 +237,40 @@ ul.users li {
   list-style: none;
 }
 
+/* Home front */
+
+table.front {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+td.front-main {
+  width: 62%;
+  padding: 1em 2em 1em 0;
+}
+
+td.front-sidebar {
+  width: 38%;
+  padding-top: 55px;
+  padding-left: 55px;
+  vertical-align: top;
+  background: #8a897f;
+  border: solid 1px;
+}
+
+#user-name-link {
+  font-size: 30px;
+}
+
+#micropost_content {
+  width: 400px;
+  height: 100px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+
 /* User show page */
 
 table.profile {
@@ -253,7 +288,7 @@ td.sidebar {
   padding-top: 85px;
   padding-left: 30px;
   vertical-align: top;
-  background: #247737;
+  background: #8a897f;
   border: solid 1px;
 }
 

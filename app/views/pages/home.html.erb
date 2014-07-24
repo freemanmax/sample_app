@@ -1,9 +1,22 @@
-<h1>Sample App</h1>
-<p>
-  This is the home page for the
-  <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-  sample application.
-</p>
-<% if loged_out? %>
-<%= link_to "Register now!", register_path, :class => "register_button round" %>
+<% if loged_in? %>
+  <table class="front" summary="For loged-in users">
+    <tr>
+      <td class="front-main">
+        <h1 class="micropost">What's on your mind?</h1>
+        <%= render 'shared/micropost_form' %>
+      </td>
+      <td class="front-sidebar round">
+        <%= render 'shared/user_info' %>
+      </td>
+    </tr>
+  </table>
+<% else %>
+  <h1>Sample App</h1>
+  <p>
+     This is the home page for the
+     <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
+     sample application.
+   </p>
+
+   <%= link_to "Register now!", register_path, :class => "register_button round" %>
 <% end %>
