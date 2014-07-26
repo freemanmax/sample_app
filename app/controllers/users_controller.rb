@@ -5,7 +5,7 @@ class UsersController < ApplicationController
 
   def index
      @users = User.paginate(page: params[:page])
-     @title = 'All users'
+     @title = 'All Users'
   end
   def show
      @user = User.find(params[:id])

@@ -222,16 +222,28 @@ img.gravatar {
 /* Users index */
 
 #all-users {
+  padding-left: 0;
+}
+
+.all-users {
+  padding-right: 40px;
   padding-left: 40px;
+  padding-top: 0;
 }
 
 ul.users {
   margin-top: 1em;
+  padding-left: 0;
 }
 
 ul.users li {
   list-style: none;
 }
+
+.pagination {
+  padding-left: 0;
+}
+
 .pagination li {
   display: inline-block;
   list-style: none;
@@ -367,6 +379,16 @@ form.new_micropost textarea {
   padding-left: 0;
 }
 
+#users {
+  border-top: 1px solid #e8e8e8;
+}
+
+#users li {
+  padding-top: 5px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+
 #right-side {
   
   position: absolute;
@@ -376,8 +398,6 @@ form.new_micropost textarea {
   margin: 0;
 }
 
-
-
 .follow-sidebar {
   display: block;
   width: 345px;
@@ -385,7 +405,6 @@ form.new_micropost textarea {
   margin-left: 25px;
   margin-right: 0;
   background: #8a897f;
-  
 }
 
 
