@@ -1,21 +1,24 @@
-
-     <div class="main">
+<table id="following" summary="Information about following/followers">
+   <tr>
+     <td id="left-side">
        <h1><%= @title %></h1>
        <%if @users.any? %>
+         <%= will_paginate %>
          <ul class"users">
            <%= render @users %>
          </ul>
          <%= will_paginate %>
        <% end %>
-     </div>
- 
-
-     <div class="sidebar round">
+     </td>
+     <td id="right-side">
+      <div class="follow-sidebar round">
        <%= render 'side_bar' %>
        <% if @users.any? %>
          <% @users.each do |user| %>
            <%= link_to gravatar_for(user, size: 30), user %>
          <% end %>
        <% end %>
-     </div>
-   
+      </div>
+     </td>
+   </tr>
+</table>

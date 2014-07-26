@@ -349,16 +349,43 @@ form.new_micropost textarea {
   margin-bottom: 0;
 }
 
-/* Follow 
+/* Following */
 
-div.main {
-  width: 50%;
-  height: 100%;
-  float: left;
+#following {
+  width: 910px;
 }
 
-div.sidebar {
-  width: 50%;
-  float: right;
+#left-side {
+  width: 455px;
+  border: 0;
+  padding-left: 40px;
+  margin: 0;
 }
-*/
+
+#left-side ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#right-side {
+  
+  position: absolute;
+  width: 410px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.follow-sidebar {
+  display: block;
+  width: 345px;
+  padding: 20px;
+  margin-left: 25px;
+  margin-right: 0;
+  background: #8a897f;
+  
+}
+
+
