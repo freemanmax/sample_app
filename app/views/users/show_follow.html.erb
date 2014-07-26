@@ -1,0 +1,21 @@
+
+     <div class="main">
+       <h1><%= @title %></h1>
+       <%if @users.any? %>
+         <ul class"users">
+           <%= render @users %>
+         </ul>
+         <%= will_paginate %>
+       <% end %>
+     </div>
+ 
+
+     <div class="sidebar round">
+       <%= render 'side_bar' %>
+       <% if @users.any? %>
+         <% @users.each do |user| %>
+           <%= link_to gravatar_for(user, size: 30), user %>
+         <% end %>
+       <% end %>
+     </div>
+   

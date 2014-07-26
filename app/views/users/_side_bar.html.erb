@@ -1,0 +1,4 @@
+<strong>Name:</strong> <%= link_to @user.name, user_path(@user) %><br />
+<strong>Email:</strong> <%= @user.email %><br />
+<strong>Posts:</strong> <%= @user.microposts.count %>
+<%= render 'shared/stats' %>

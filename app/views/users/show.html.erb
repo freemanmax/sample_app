@@ -1,12 +1,11 @@
 <table class="profile" summary="Profile information">
   <tr>
-    <td class="main"
+    <td class="main">
      <%= render 'gravatar' %>
+     <%= render 'follow_form' if loged_in? %>
     </td>
     <td class="sidebar round">
-      <strong>Name:</strong> <%= link_to @user.name, user_path(@user) %><br />
-      <strong>Email:</strong> <%= @user.email %><br />
-      <strong>Posts:</strong> <%= @user.microposts.count %>
+     <%= render 'side_bar' %>
     </td>
    </tr>
     <% if @user.microposts.any? %>
