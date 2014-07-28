@@ -1,13 +1,15 @@
 <% if loged_in? %>
   <table class="front" summary="For loged-in users">
     <tr>
-      <td class="front-main">
+      <td id="home-main" class="front-main">
         <h1 class="micropost">What's on your mind?</h1>
         <%= render 'shared/micropost_form' %>
       </td>
-      <td class="front-sidebar round">
-        <%= render 'shared/user_info' %>
-        <%= render 'shared/stats' %>
+      <td id="home-sidebar">
+        <div class="home-sidebar round">
+          <%= render 'shared/user_info' %>
+          <%= render 'shared/stats' %>
+        </div>
       </td>
     </tr>
     <%= render 'shared/feed' %>

@@ -261,14 +261,22 @@ td.front-main {
   padding: 1em 2em 1em 0;
 }
 
-td.front-sidebar {
-  width: 38%;
-  padding-top: 40px;
-  padding-left: 55px;
-  vertical-align: top;
-  background: #8a897f;
-  border: solid 1px;
+#home-sidebar {
+  position: absolute;
+  width: 345px;
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
+
+.home-sidebar {
+  height: 215px;
+  background: #8a897f;
+  padding: 40px 0px 40px 60px;
+}
+  
+
+
 
 #user-name-link {
   font-size: 30px;
@@ -312,7 +320,7 @@ h1.micropost {
 }
 
 table.microposts {
-  width: 560px;
+  width: 520px;
   margin-top: 1em;
 }
 
