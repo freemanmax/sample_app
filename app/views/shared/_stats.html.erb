@@ -1,13 +1,23 @@
 <% @user ||= current_user %>
-<div class="stats">     
-         <a href="<%= following_user_path(@user) %>">
-           <span id="following" class="stat">
-             <%= @user.followed_users.count %> following
-           </span>
-         </a> 
-         <a href="<%= followers_user_path(@user) %>">
-           <span id="followers" class="stat">
-             <%= @user.followers.count %> followers
-           </span>
-         </a> 
+<div class="stats">
+  <ul class="stats-list">
+     <li class="stat">
+         <a class="stat-link" title="<%= current_user.microposts.count %> Posts" href="#">
+             <span class="stat-label">POSTS</span></br>
+             <span class="stat-value"><%= current_user.microposts.count %></span>
+         </a>
+     </li>
+     <li class="stat">     
+         <a class="stat-linl" title="<%= @user.followed_users.count %> Following" href="<%= following_user_path(@user) %>">
+             <span class="stat-label">FOLLOWING</span></br>
+             <span class="stat-value"><%= @user.followed_users.count %></span>
+         </a>
+     </li>
+     <li class="stat"> 
+         <a class="stat-link" title="<%= @user.followers.count %> Followers" href="<%= followers_user_path(@user) %>">
+             <span class="stat-label">FOLLOWERS</span></br>
+             <span class="stat-value"><%= @user.followers.count %></span>
+         </a>
+     </li>
+  </ul> 
 </div>

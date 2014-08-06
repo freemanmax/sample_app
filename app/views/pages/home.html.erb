@@ -1,19 +1,18 @@
 <% if loged_in? %>
-  <table class="front" summary="For loged-in users">
-    <tr>
-      <td id="home-main" class="front-main">
+  <div class="home-top">
+      <div class="home-top-right">
+        <div class="top-right">
+          <%= render 'shared/user_info' %>
+        </div>
+      </div>
+      <div class="home-top-left">
         <h1 class="micropost">What's on your mind?</h1>
         <%= render 'shared/micropost_form' %>
-      </td>
-      <td id="home-sidebar">
-        <div class="home-sidebar round">
-          <%= render 'shared/user_info' %>
-          <%= render 'shared/stats' %>
-        </div>
-      </td>
-    </tr>
+      </div>
+  </div>
+  <div class="home-bottom">
     <%= render 'shared/feed' %>
-  </table>
+  </div>
 <% else %>
   <h1>Welcome to Bejben</h1>
   <p>Connect with your friends, and other people.</p>

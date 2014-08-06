@@ -2,7 +2,7 @@
    <td class="micropost">
       <span class="content"><%= micropost.content %></span>
       <span class="timepost">
-         Posted <%= time_ago_in_words(micropost.created_at) %> ago.
+         Posted <%= post_time(micropost.created_at) %>.
          <% if current_user?(micropost.user) %>
            <%= link_to "delete", micropost, method: :delete, 
            data: { confirm: "You sure?" }, title: micropost.content %>

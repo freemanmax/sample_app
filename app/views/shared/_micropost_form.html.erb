@@ -1,9 +1,16 @@
 <%= form_for(@micropost) do |f| %>
-   <%= render 'shared/error_messages', :object => f.object %>
-   <div class="field">
-     <%= f.text_area :content, placeholder: "Write post..." %>
+   <div class="post-create">
+     <div class="post-field">
+       <%= f.text_area :content, placeholder: "Write post...", class: "text-area" %>
+     </div>
+     <div class="post-actions">
+       <%= f.submit "Create post", class: "post-button" %>
+     </div>
    </div>
-   <div class="actions">
-     <%= f.submit "Create post" %>
+   <div class="success">
+     <%= render 'shared/success_messages' %>
+   </div>
+   <div class="eror">
+     <%= render 'shared/error_messages', :object => f.object %>
    </div>
 <% end %>

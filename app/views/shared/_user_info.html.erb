@@ -1,13 +1,17 @@
-<div class="user_info">
-  <span class="user-link">
-    <%= link_to gravatar_for(current_user, size: 110), current_user %></br> 
-    <%= link_to current_user.name, current_user,id: "user-name-link" %>
-  </span></br>
-  <span>
-    <%= link_to "Edit Profile", edit_user_path(current_user) %>
-  </span></br>
-  <span>
-    <%= pluralize(current_user.microposts.count, "posts") %>
-  </span>
+<a class="user-block-link" href="<%= user_path(current_user) %>">
+</a>
+<div class="user-content">
+  <a class="avatar-link" title="<%= current_user.name %>" href="<%= user_path(current_user) %>">
+    <%= gravatar_for(current_user, size: 110) %>
+  </a>
+  <div class="user-fields">
+    <div class="user-name">
+      <%= link_to current_user.name, current_user,class: "user-name-link" %>
+    </div>
+    <span class="user-edit-link">
+      <%= link_to "Edit Profile", edit_user_path(current_user), class: "user-edit" %>
+    </span>
+  </div>
+  <%= render 'shared/stats' %>
 </div>
    
