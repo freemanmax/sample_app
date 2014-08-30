@@ -1,10 +1,8 @@
   <div class="post">
     <div class="post-content">
       <div class="post-block">
-        <div class="post-block-up">
-        </div>
-        <div class="post-block-down">
-          <%= link_to gravatar_for(feed_item.user, size: 55), feed_item.user, class: "block-down-img" %>
+        <div class="post-img-link">
+          <%= link_to gravatar_for(feed_item.user, size: 55), feed_item.user, class: "block-img-link" %>
         </div>
       </div>
       <strong class="info-user-link">
