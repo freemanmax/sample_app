@@ -339,6 +339,7 @@ a.avatar-link {
 }
 
 .avatar-link img {
+  background: white;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -491,6 +492,7 @@ a.user-name-link:hover {
 }
 
 .block-img-link img {
+  background: white;
   margin-top: 5px;
   margin-left: 5px;
   -moz-border-radius: 5px;
