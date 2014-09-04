@@ -1,8 +1,14 @@
-<div class="all-users">
-  <h1 id="all-users">All Users</h1>
-  <%= will_paginate %>
-  <ul id="users" class="users">
-    <%= render @users %>
-  </ul>
-  <%= will_paginate %>
+<div class="users-all">
+  <div class="all-users-block-up">
+    <h1 id="all-users"><img class="users-logo" src="/assets/users_logo.png"> <%= link_to "Users", users_path %></h1>
+    <%= will_paginate %>
+  </div>
+  <div class="all-users-content">
+    <ul id="users" class="users">
+      <%= render @users %>
+    </ul>
+  </div>
+  <div class="all-users-block-down">
+    <%= will_paginate %>
+  </div>
 </div>

@@ -247,32 +247,133 @@ img.gravatar {
 
 /* Users index */
 
-#all-users {
-  padding-left: 0;
+
+
+.all-users-block-up {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  background: #2ba3ff;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
 }
 
-.all-users {
-  padding-right: 40px;
-  padding-left: 40px;
-  padding-top: 0;
+.all-users-block-down {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #2ba3ff;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+}
+
+#all-users {
+  margin-top: 0;
+  padding-left: 0;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+#all-users a {
+  font-size: 20px;
+  color: #acb2bb;
+}
+
+#all-users a:hover {
+  color: black;
+  text-decoration: underline;
 }
 
 ul.users {
-  margin-top: 1em;
+  margin-top: 0;
   padding-left: 0;
+  margin-bottom: 0;
 }
 
 ul.users li {
   list-style: none;
+  display: inline-block;
 }
 
 .pagination {
   padding-left: 0;
 }
-
+.pagination ul {
+  margin-left: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .pagination li {
   display: inline-block;
   list-style: none;
+}
+
+.pagination li a {
+  padding-left: 5px;
+  padding-right: 5px;
+  background: #f6f7f8;
+  margin-left: -5px;
+  border: 1px solid #b6b7b9;
+  color: #66757f;
+}
+
+.pagination li a:hover {
+  background: #b6b7b9;
+  color: black;
+}
+
+
+.user {
+  height: 100px;
+  width:429px;
+  border: 1px solid #AADAFF;
+}
+
+.user-content-block {
+  margin-left: 110px;
+  margin-top: -60px;
+}
+
+.user {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background: white;
+}
+
+.user-block-img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: #aaa5a5;
+}
+
+.all-users-content {
+  padding-top: 20px;
+  background: #e9f5ff;
+  border: 1px solid #AADAFF;
+}
+
+.delete-user {
+  display: block;
+  margin-left: 340px;
+  margin-top: -25px;
+  width: 65px;
+  height: 25px;
+  padding-left: 10px;
+  padding-top: 3px;
+  background: #f6f7f8;
+  border: 1px solid #b6b7b9;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.delete-user:hover {
+  background: #b6b7b9;
+  color: black;
+}
+
+.users-logo {
+  margin-bottom: -3px;
 }
 
 /* Home */
@@ -607,16 +708,6 @@ div.user_info span.microposts {
   list-style: none;
   padding-left: 0;
 }
-
-#users {
-  border-top: 1px solid #e8e8e8;
-}
-
-#users li {
-  padding-top: 5px;
-  border-bottom: 1px solid #e8e8e8;
-}
-
 
 #right-side {
   
