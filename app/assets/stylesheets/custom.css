@@ -249,12 +249,7 @@ img.gravatar {
 
 /* Users index */
 
-.fix-down {
-  position: relative;
-  width: 930px;
-  top: 10px;
-  z-index: 5;
-}
+
 .all-users-block-up {
   padding-top: 5px;
   padding-bottom: 10px;
@@ -267,7 +262,8 @@ img.gravatar {
 
 .all-users-block-down {
   width: 930px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background: #2ba3ff;
   -moz-border-radius: 0 0 5px 5px;
   -webkit-border-radius: 0 0 5px 5px;
@@ -329,7 +325,6 @@ ul.users li {
 
 
 .user {
-  float: left;
   height: 100px;
   width:429px;
   border: 1px solid #AADAFF;
@@ -338,6 +333,7 @@ ul.users li {
   margin-left: 20px;
   margin-bottom: 20px;
   background: white;
+  vertical-align: top;
 }
 
 .user-content-block {
@@ -355,12 +351,10 @@ ul.users li {
 }
 
 .all-users-content {
-  position: relative;
+  
   padding-top: 20px;
   background: #e9f5ff;
   border: 1px solid #AADAFF;
-  float: left;
-  z-index: 6;
   width: 928px;
 }
 
