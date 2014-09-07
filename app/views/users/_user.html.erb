@@ -1,9 +1,20 @@
-<li class="user">
-  <%= link_to gravatar_for(user, size: 100), user, class: "user-block-img" %>
-  <div class="user-content-block">
-    <%= link_to user.name, user %>
-  </div>
-  <% if current_user.admin? && !current_user?(user) %>
-       <%= link_to "delete", user, method: :delete, data: { confirm:   "You sure?" }, class: "delete-user" %>
-  <% end %>
-</li>
+<% if @title == 'Users' %>
+  <li class="user">
+    <%= link_to gravatar_for(user, size: 100), user, class: "user-block-img" %>
+    <div class="user-content-block">
+      <%= link_to user.name, user %>
+      <% @user = user %>
+      <%= render 'follow_form' if loged_in? %>
+      <% if current_user.admin? && !current_user?(user) %>
+           <%= link_to "delete", user, method: :delete, data: { confirm:   "You sure?" }, class: "delete-user" %>
+      <% end %>
+    </div>
+  </li>
+<% else %>
+  <li class="user">
+    <%= link_to gravatar_for(user, size: 100), user, class: "user-block-img" %>
+    <div class="user-content-block">
+      <%= link_to user.name, user %>
+    </div>
+  </li>
+<% end %>

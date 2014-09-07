@@ -2,7 +2,9 @@
   <tr>
     <td class="main">
      <%= render 'gravatar' %>
-     <%= render 'follow_form' if loged_in? %>
+     <div class="follow-form-profile">
+       <%= render 'follow_form' if loged_in? %>
+     </div>
     </td>
     <td class="sidebar round">
      <%= render 'side_bar' %>

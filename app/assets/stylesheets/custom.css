@@ -17,7 +17,7 @@ body {
   height: 50px;
   background: #ffffff;
   border-bottom: 1px solid rgba(0,0,0,0.15);
-  z-index: 7;
+  z-index: 10;
 }
 
 header {
@@ -158,15 +158,17 @@ div.field, div.actions {
 }
 
 .actions input {
-  height: 24px;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: 0;
   background: #006400;
   color: white;
   border: 1px solid;
   border-color: gray;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
 }
 
 .actions input:hover {
@@ -247,8 +249,12 @@ img.gravatar {
 
 /* Users index */
 
-
-
+.fix-down {
+  position: relative;
+  width: 930px;
+  top: 10px;
+  z-index: 5;
+}
 .all-users-block-up {
   padding-top: 5px;
   padding-bottom: 10px;
@@ -256,11 +262,12 @@ img.gravatar {
   -moz-border-radius: 5px 5px 0 0;
   -webkit-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0;
+  width: 930px;
 }
 
 .all-users-block-down {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  width: 930px;
+  padding-bottom: 20px;
   background: #2ba3ff;
   -moz-border-radius: 0 0 5px 5px;
   -webkit-border-radius: 0 0 5px 5px;
@@ -284,9 +291,8 @@ img.gravatar {
 }
 
 ul.users {
-  margin-top: 0;
-  padding-left: 0;
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ul.users li {
@@ -323,20 +329,22 @@ ul.users li {
 
 
 .user {
+  float: left;
   height: 100px;
   width:429px;
   border: 1px solid #AADAFF;
-}
-
-.user-content-block {
-  margin-left: 110px;
-  margin-top: -60px;
-}
-
-.user {
+  margin-top: 0;
+  padding: 0;
   margin-left: 20px;
   margin-bottom: 20px;
   background: white;
+}
+
+.user-content-block {
+  width: 319px;
+  height: 100px;
+  margin-top: -60px;
+  margin-left: 110px;
 }
 
 .user-block-img {
@@ -347,17 +355,20 @@ ul.users li {
 }
 
 .all-users-content {
+  position: relative;
   padding-top: 20px;
   background: #e9f5ff;
   border: 1px solid #AADAFF;
+  float: left;
+  z-index: 6;
+  width: 928px;
 }
 
 .delete-user {
   display: block;
-  margin-left: 340px;
-  margin-top: -25px;
   width: 65px;
   height: 25px;
+  margin-top: -17px;
   padding-left: 10px;
   padding-top: 3px;
   background: #f6f7f8;
@@ -374,6 +385,16 @@ ul.users li {
 
 .users-logo {
   margin-bottom: -3px;
+}
+
+.follow_form {
+  margin-top: -27px;
+  margin-left: 230px;
+}
+
+.follow-form-profile {
+  margin-left: -210px;
+  margin-top: 30px;
 }
 
 /* Home */

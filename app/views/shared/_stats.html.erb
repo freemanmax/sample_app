@@ -8,7 +8,7 @@
          </a>
      </li>
      <li class="stat">     
-         <a class="stat-linl" title="<%= @user.followed_users.count %> Following" href="<%= following_user_path(@user) %>">
+         <a class="stat-link" title="<%= @user.followed_users.count %> Following" href="<%= following_user_path(@user) %>">
              <span class="stat-label">FOLLOWING</span></br>
              <span class="stat-value"><%= @user.followed_users.count %></span>
          </a>
@@ -16,7 +16,7 @@
      <li class="stat"> 
          <a class="stat-link" title="<%= @user.followers.count %> Followers" href="<%= followers_user_path(@user) %>">
              <span class="stat-label">FOLLOWERS</span></br>
-             <span class="stat-value"><%= @user.followers.count %></span>
+             <span class="stat-value" id="followers"><%= @user.followers.count %></span>
          </a>
      </li>
   </ul> 
