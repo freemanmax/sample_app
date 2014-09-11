@@ -11,4 +11,10 @@ class Micropost < ActiveRecord::Base
     where("user_id IN (#{followed_user_ids}) OR user_id = :user_id",
           user_id: user.id)
   end
+  auto_html_for :content do
+    html_escape
+    sized_image
+    youtube(:width => 820, :height => 450, :autoplay => false)
+    link :target => "_blank", :rel => "nofollow"
+  end
 end

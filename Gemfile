@@ -43,6 +43,8 @@ gem 'sprockets'
 gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+#gem 'rails_autolink'
+gem 'auto_html'
 
 group :development, :test do
     gem 'sqlite3' 

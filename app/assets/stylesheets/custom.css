@@ -587,6 +587,8 @@ a.user-name-link:hover {
   margin-left: 70px;
 }
 
+
+
 .post-block {
   float: left;
   width: 70px;
@@ -621,6 +623,16 @@ a.user-name-link:hover {
   margin-top: 2px;
   margin-bottom: 0;
   margin-right: 0;
+}
+
+.content-text img {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.youtube {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .info-user-link a {
