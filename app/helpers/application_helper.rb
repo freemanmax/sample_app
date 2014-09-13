@@ -30,12 +30,12 @@ include AutoHtml
       end
     end
   end
-  AutoHtml.add_filter(:sized_image).with(:alt => '', :width => 820, :height => 450) do |text, options|
+  AutoHtml.add_filter(:sized_image).with(:alt => '', :maxwidth => 820, :maxheight => 500) do |text, options|
     text.gsub(/http:\/\/.+\.(jpg|jpeg|bmp|gif|png)(\?\S+)?/i) do |match|
       alt = options[:alt]
-      width = options[:width]
-      height = options[:height]
-      %|<a href="#{match}" target="_blank"><img src="#{match}" alt="#{alt}" width="#{width}" height="#{height}"/></a>|
+      maxwidth = options[:maxwidth]
+      maxheight = options[:maxheight]
+      %|</br><a href="#{match}" target="_blank"><img src="#{match}"  style="max-width:#{maxwidth}px; max-height:#{maxheight}px;" alt="#{alt}"/></a></br>|
     end
   end  
 end
